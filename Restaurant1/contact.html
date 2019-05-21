@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<!--
+Name: Christina Jeong
+Date Created: 05/15/2019
+Most recent revision: 05/18/2019
+Purpose: Contact
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <nav>
+            <hr/>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="menu.html">Menu</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <hr/>
+        </nav>
+        
+        <section>
+            <form action="submit.html" method="POST">
+                <label for="name">Name:</label><br/>
+                <input type="text" id="name" name="name" required><br/>
+                <label for="email">Email:</label><br/>
+                <input type="text" id="email" name="lastName" required><br/>
+                <label for="phone">Phone:</label><br/>
+                <input type="text" id="phone" name="phone" required><br/>
+                
+                <label for="reason">Reason for Inquiry:</label><br/>
+                <select id="reason" name="reason">
+                    <option value="party" selected>Private Party</option>
+                    <option value="feedback" selected>Feedback</option>
+                    <option value="other" selected>Other</option>
+                    <option value="default" selected>Catering</option>
+                </select><br/>
+                
+                <label for="brief description">Additional Information:</label><br/>
+                <textarea name="briefDescription"></textarea><br/>
+                
+                <legend>Have you been to the restaurant?</legend><br/>
+                <input type="radio" id="choice1" name="questionnaire" value="no" checked>
+                <label for="choice1">No</label><br/>
+                <input type="radio" id="choice2" name="questionnaire" value="yes" >
+                <label for="choice2">Yes</label><br/>
+                
+                <legend>Best days to contact you:</legend><br/>
+                <input type="checkbox" id="m" name="day" value="m">
+                <label for="m">M</label><br/>
+                <input type="checkbox" id="t" name="day" value="t">
+                <label for="t">T</label><br/>
+                <input type="checkbox" id="w" name="day" value="w">
+                <label for="w">W</label>
+                <br/>
+                <input type="checkbox" id="th" name="day" value="th">
+                <label for="th">Th</label>
+                <br/>
+                <input type="checkbox" id="f" name="day" value="f">
+                <label for="f">F</label>
+                <br/>
+                
+                
+                <input type="submit" name="submit" value="Send Request">
+            </form>
+        </section>
+        <footer>
+            <hr/>
+            <p>1234 Food St., Hungry, TX, 54321</p>
+            <p>Call <strong>ILUVKIMCHI</strong> or <strong>(458)854-6244</strong> to make your reservation now!</p>
+            <p>&copy; 2019 Seoul Food. All rights reserved.
+            </p>
+        </footer>
+    </body> 
+</html
