@@ -7,37 +7,134 @@ Purpose: Menu
 -->
 <html lang="en"> 
     <head> 
-        <title>Menu</title>	
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Menu</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+        <style>
+            header {
+            background: red no-repeat url(images/bigpride.png) scroll center;
+            padding: 45px 10px 25px 10px;
+            }
+            
+            table, th, td { 
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px 0px 5px 15px;
+            }
+            table { 
+                width: 80%; 
+                margin-bottom: 16px;
+            } 
+            th { 
+                height: 25px; 
+                background-color: black;
+                color: white;
+            }
+            tfoot {
+                background-color: #DCDCDC;
+                color: black;
+            }
+            tfoot td { 
+                text-align: center; 
+            }
+            tbody tr:nth-child(even) { 
+                background-color: red; 
+            } 
+            tbody tr:nth-child(odd) { 
+                background-color: white; 
+            }
+        </style>
     </head> 
     
     <body>
         <header>
-            <h1>Seoul Food Menu</h1>
+            <h1><strong>Menu</strong></h1>
         </header>
 
         <nav>
-            <hr/>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="menu.html">Menu</a></p>
-            <p><a href="contact.html">Contact Us</a></p>
-            <hr/>
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="menu.html">Menu</a>
+            <a class="btn" href="contact.html">Contact Us</a>
         </nav>
         
-        <section>
-            <p><strong>Kalbi "칼비"</strong><br/>A Korean barbeque classic!<br/>Korean-style short ribs<br/>Served with a side of rice<br/>$15.99</p>
-            <p><strong>Bulgogi "불고기"</strong><br/>A customer favorite!<br/>Thinly sliced, juicy meat marinated in a sweet and tangy sauce, cooked over a blazing hot fire<br/>Served with a side of rice<br/>$12.99</p>
-            <p><strong>Kimchi Jjigae "김치 찌개"</strong><br/>A traditional classic!<br/>A traditional Korean soup made with loads of fermented kimchi, meat, and pure deliciousness<br/>Served with a side of rice<br/>$10.99</p>
-            <p><strong>Soondubu "순두부"</strong><br/>Mom's favorite!<br/>A spicy Korean stew made of dubu (tofu), vegetables, mushrooms, seafood, beef or pork, and gochujang (chili paste)<br/>Served with a side of rice<br/>$10.99</p>
-            <p><strong>Bibimbap "비빔밥"</strong><br/>Always a safe choice!<br/>A bowl of mixed ingredients including, but not limited to, rice, namul (seasoned and sautéed vegetables), mushrooms, beef, soy sauce, gochujang (chili pepper paste), and a fried egg<br/>Served with a side of rice<br/>$9.99</p>
-            <p><strong>Naengmyeon"냉면"</strong><br/>Cool and refreshing, a summer fav!<br/>Tangy buckwheat noodles loaded with flavor and fresh veggies<br/>Served with a side of rice<br/>$9.99</p>
-            <p><strong>Samgyetang "삼계탕"</strong><br/>Perfect for a chilly day!<br/>A traditional soup made of chicken, garlic, rice, scallion, Korean jujube, Korean ginseng, and spices<br/>Served with a side of rice<br/>$11.99</p>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md">
+                    <h5><strong>Kalbi "칼비"</strong></h5>
+                    <p>A Korean barbeque classic!<br/>Korean-style short ribs<br/>Served with a side of rice<br/>$15.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h5><strong>Bulgogi "불고기"</strong></h5>
+                    <p>A customer favorite!<br/>Thinly sliced, juicy meat marinated in a sweet and tangy sauce, cooked over a blazing hot fire<br/>Served with a side of rice<br/>$12.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h5><strong>Kimchi Jjigae "김치 찌개"</strong></h5>
+                    <p>A traditional classic!<br/>A traditional Korean soup made with loads of fermented kimchi, meat, and pure deliciousness<br/>Served with a side of rice<br/>$10.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h5><strong>Soondubu "순두부"</strong></h5>
+                    <p>Mom's favorite!<br/>A spicy Korean stew made of dubu (tofu), vegetables, mushrooms, seafood, beef or pork, and gochujang (chili paste)<br/>Served with a side of rice<br/>$10.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h5><strong>Bibimbap "비빔밥"</strong></h5>
+                    <p>Always a safe choice!<br/>A bowl of mixed ingredients including, but not limited to, rice, namul (seasoned and sautéed vegetables), mushrooms, beef, soy sauce, gochujang (chili pepper paste), and a fried egg<br/>Served with a side of rice<br/>$9.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h5><strong>Naengmyeon"냉면"</strong></h5>
+                    <p>Cool and refreshing, a summer fav!<br/>Tangy buckwheat noodles loaded with flavor and fresh veggies<br/>Served with a side of rice<br/>$9.99</p>
+                </div>
+            </div>
+        </div>
+        
+            <table align="center">  
+                <thead> 
+                    <tr> 
+                        <th><strong>Beverage</strong></th> 
+                        <th><strong>Price</strong></th> 
+                    </tr> 
+                </thead> 
+
+                <tbody> 
+                    <tr> 
+                        <td><strong>Fountain drinks</strong>(Coke Products)</td> 
+                        <td>$1.50</td> 
+                    </tr> 
+                    <tr> 
+                        <td><strong>Barley Tea</strong>(Served hot or cold)</td> 
+                        <td>$1.00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Iced Tea(Unsweetened)<br/></td> 
+                        <td>$1.25</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Coffee</td> 
+                        <td>$1.25</td> 
+                    </tr>
+                    <tr> 
+                        <td>Tap Water</td> 
+                        <td>$Free.99</td> 
+                    </tr>
+                </tbody> 
+                <tfoot> 
+                    <tr> 
+                        <td colspan="2">Free Refills on all beverages</td> 
+                    </tr> 
+                </tfoot> 
+            </table>
         <footer>
-            <hr/>
-            <p>1234 Food St., Hungry, TX, 54321</p>
-            <p>Call <strong>ILUVKIMCHI</strong> or <strong>(458)854-6244</strong> to make your reservation now!</p>
-            <p>&copy; 2019 Seoul Food. All rights reserved.
-            </p>
+            <h5>1234 Food St., Hungry, TX, 54321</h5>
+            <p>Call <strong>ILUVKIMCHI</strong> or <strong>(458)854-6244</strong> to make your reservation now!<br/>
+            &copy; 2019 Seoul Food. All rights reserved.</p>
         </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body> 
 </html
